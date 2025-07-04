@@ -1,0 +1,25 @@
+Format: 1.8
+Date: Fri, 04 Jul 2025 09:57:18 +0300
+Source: pyplc
+Binary: python3-pyplc
+Built-For-Profiles: noudeb
+Architecture: all
+Version: 0.5
+Distribution: UNRELEASED
+Urgency: medium
+Maintainer: vlinnik <vlinnik@mail.ru>
+Description:
+ python3-pyplc - Library for developing and debugging control logic on KRAX PLC-93
+Changes:
+ pyplc (0.5) UNRELEASED; urgency=medium
+ .
+   * После объединения с wip/etalon-250412.
+Checksums-Sha1:
+ f7741621dd457a5503f9fec6453ba0150dd02c14 6544 pyplc_0.5_amd64.buildinfo
+ 89bce5b2aaecbd851d7ad96459ce7cdc6ca2022b 37524 python3-pyplc_0.5_all.deb
+Checksums-Sha256:
+ ab9417d4996c7a7999a340d1a34352648923cfd1c1144886f528d88fb9d88368 6544 pyplc_0.5_amd64.buildinfo
+ d74be6aecefa980a0afa73815615dff5be4dd02193e395e7900cd12baec463f2 37524 python3-pyplc_0.5_all.deb
+Files:
+ 86ef718f3df3a52637df147b30d6717e 6544 devel optional pyplc_0.5_amd64.buildinfo
+ 07d78e727e55d45f3a7d88ab265b28c8 37524 devel optional python3-pyplc_0.5_all.deb

@@ -1,0 +1,15 @@
+{
+  "paths": {
+    "root": "src"
+  },
+  "tools": {
+    "downloader": "",
+    "miniterm": "",
+    "telnet": "/usr/bin/telnet",
+    "enumSerials": "/usr/bin/pyserial-ports",
+    "paths": "/home/ainur/.local/lib/python3.12/site-packages/../Scripts/",
+    "upydev": "/home/ainur/.local/bin/upydev",
+    "serial": "/home/ainur/.local/bin/mpremote"
+  },
+  "project": "DEMO"
+}
