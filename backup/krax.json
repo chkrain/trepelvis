@@ -1,0 +1,23 @@
+{
+    "slots": [
+        1,
+        1
+    ],
+    "node_id": 1,
+    "init": {
+        "hostname": "krax",
+        "flags": 0,
+        "iface": 0,
+        "channel": 1,
+        "rate": 12
+    },
+    "layout": [
+        "38:18:2b:83:da:ac",
+        "5c:01:3b:33:d0:a0"
+    ],
+    "devs": [
+        "KRAX DO-530",
+        "KRAX DI-430"
+    ],
+    "via": "0.0.0.0"
+}

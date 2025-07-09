@@ -1,17 +1,10 @@
 {
-    "slots": [
-        8,
-        8,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-    ],
+  "slots": [
+    8,
+    8,
+    1, 1, 1, 1, 1, 1, 1,
+    1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1
+  ],
     "node_id": 1,
     "init": {
         "hostname": "krax",
@@ -35,23 +28,41 @@
         "b4:8a:0a:8e:fe:08",
         "08:d1:f9:27:f8:28",
         "08:d1:f9:27:fa:ec"
-    ],
-    /* 
-    TODO: подписать все модули 
-    */
+    ], 
     "devs": [
         "KRAX AI-455",
         "KRAX AO-555",
-        "KRAX DI-430",
-        "KRAX DI-430",
-        "KRAX DI-430",
-        "KRAX DI-430",
-        "KRAX DI-430",
-        "KRAX DI-430",
         "KRAX DO-530",
         "KRAX DO-530",
         "KRAX DO-530",
-        "KRAX DO-530"
+        "KRAX DO-530",
+        "KRAX DO-530",
+        "KRAX DO-530",
+        "KRAX DO-530",
+        "KRAX DI-430",
+        "KRAX DI-430",
+        "KRAX DI-430",
+        "KRAX DI-430",
+        "KRAX DI-430",
+        "KRAX DI-430",
+        "KRAX DI-430",
+        "KRAX DI-430",
+        "KRAX DI-430",
+        "KRAX DI-430",
+        "KRAX DI-430",
+        "KRAX DI-430",
+        "KRAX DI-430",
+        "KRAX DI-430",
+        "KRAX DI-430",
+        "KRAX DI-430",
+        "KRAX DI-430",
+        "KRAX DI-430",
+        "KRAX DI-430",
+        "KRAX DI-430",
+        "KRAX DI-430",
+        "KRAX DI-430",
+        "KRAX DI-430",
+        "KRAX DI-430"
     ],
-    "scanTime": 150
+    "scanTime": 100
 }
