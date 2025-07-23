@@ -856,8 +856,6 @@ control.di_reserve_10 = plc.DI_RESERVE_10
 
 def main():
     """Главный цикл программы"""
-    # Убедимся, что все переменные экспортируются
-    control.persistent()
     plc.run(instances=[control], ctx=globals())
 
 if __name__ == "__main__":
