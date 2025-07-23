@@ -6,42 +6,734 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>10000</width>
-    <height>10000</height>
+    <width>783</width>
+    <height>930</height>
    </rect>
-  </property>
-  <property name="minimumSize">
-   <size>
-    <width>10000</width>
-    <height>10000</height>
-   </size>
-  </property>
-  <property name="mouseTracking">
-   <bool>true</bool>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">QPushButton {
+    width: 108px;
+    height: 30px;
+    min-width: 108px;
+    min-height: 30px;
+    max-width: 108px;
+    max-height: 30px;
+    qproperty-sizePolicy: &quot;Fixed&quot;;
+}
+QPushButton:pressed[style=&quot;start&quot;]
+{
+	background-color: green;
+}
+QPushButton[style=&quot;start&quot;] {
+	background-color: red;
+}</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QLabel" name="label">
+   <widget class="QTabWidget" name="tabWidget">
     <property name="geometry">
      <rect>
-      <x>3630</x>
-      <y>160</y>
-      <width>66</width>
-      <height>19</height>
+      <x>9</x>
+      <y>9</y>
+      <width>624</width>
+      <height>887</height>
      </rect>
     </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
     <property name="styleSheet">
-     <string notr="true">color: white;
-background: black;</string>
+     <string notr="true">QWidget {
+	background: rgb(217 217 217);
+	border-radius: 4%;
+}
+QPushButton {
+	border: none;
+	background-color: rgb(255, 255, 255);
+}
+QPushButton:pressed[style=&quot;start&quot;] {
+	background-color: rgb(184 255 188);
+}
+QPushButton:pressed[style=&quot;stop&quot;] {
+	background-color: rgb(184 255 188);
+}
+
+QLabel {
+	background-color: rgb(255, 255, 255);
+}
+</string>
     </property>
-    <property name="text">
-     <string>Бункер</string>
+    <property name="currentIndex">
+     <number>0</number>
     </property>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>Tab 1</string>
+     </attribute>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="1" column="0">
+       <widget class="CtlGen" name="ctlgen_4">
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QWidget {
+	background: rgb(217 217 217);
+	border-radius: 4%;
+}
+QPushButton {
+	border: none;
+	background-color: rgb(255, 255, 255);
+}
+QPushButton:pressed[style=&quot;start&quot;] {
+	background-color: rgb(184 255 188);
+}
+QPushButton:pressed[style=&quot;stop&quot;] {
+	background-color: rgb(184 255 188);
+}
+
+QLabel {
+	background-color: rgb(255, 255, 255);
+}
+</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="1">
+       <widget class="CtlGen" name="ctlgen_14">
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QWidget {
+	background: rgb(217 217 217);
+	border-radius: 4%;
+}
+QPushButton {
+	border: none;
+	background-color: rgb(255, 255, 255);
+}
+QPushButton:pressed[style=&quot;start&quot;] {
+	background-color: rgb(184 255 188);
+}
+QPushButton:pressed[style=&quot;stop&quot;] {
+	background-color: rgb(184 255 188);
+}
+
+QLabel {
+	background-color: rgb(255, 255, 255);
+}
+</string>
+        </property>
+       </widget>
+      </item>
+      <item row="9" column="0">
+       <widget class="CtlGen" name="ctlgen_17">
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QWidget {
+	background: rgb(217 217 217);
+	border-radius: 4%;
+}
+QPushButton {
+	border: none;
+	background-color: rgb(255, 255, 255);
+}
+QPushButton:pressed[style=&quot;start&quot;] {
+	background-color: rgb(184 255 188);
+}
+QPushButton:pressed[style=&quot;stop&quot;] {
+	background-color: rgb(184 255 188);
+}
+
+QLabel {
+	background-color: rgb(255, 255, 255);
+}
+</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0">
+       <widget class="CtlGen" name="ctlgen_8">
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QWidget {
+	background: rgb(217 217 217);
+	border-radius: 4%;
+}
+QPushButton {
+	border: none;
+	background-color: rgb(255, 255, 255);
+}
+QPushButton:pressed[style=&quot;start&quot;] {
+	background-color: rgb(184 255 188);
+}
+QPushButton:pressed[style=&quot;stop&quot;] {
+	background-color: rgb(184 255 188);
+}
+
+QLabel {
+	background-color: rgb(255, 255, 255);
+}
+</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="0">
+       <widget class="CtlGen" name="ctlgen_15">
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QWidget {
+	background: rgb(217 217 217);
+	border-radius: 4%;
+}
+QPushButton {
+	border: none;
+	background-color: rgb(255, 255, 255);
+}
+QPushButton:pressed[style=&quot;start&quot;] {
+	background-color: rgb(184 255 188);
+}
+QPushButton:pressed[style=&quot;stop&quot;] {
+	background-color: rgb(184 255 188);
+}
+
+QLabel {
+	background-color: rgb(255, 255, 255);
+}
+</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="CtlGen" name="ctlgen_12">
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QWidget {
+	background: rgb(217 217 217);
+	border-radius: 4%;
+}
+QPushButton {
+	border: none;
+	background-color: rgb(255, 255, 255);
+}
+QPushButton:pressed[style=&quot;start&quot;] {
+	background-color: rgb(184 255 188);
+}
+QPushButton:pressed[style=&quot;stop&quot;] {
+	background-color: rgb(184 255 188);
+}
+
+QLabel {
+	background-color: rgb(255, 255, 255);
+}
+</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="0">
+       <widget class="CtlGen" name="ctlgen_11">
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QWidget {
+	background: rgb(217 217 217);
+	border-radius: 4%;
+}
+QPushButton {
+	border: none;
+	background-color: rgb(255, 255, 255);
+}
+QPushButton:pressed[style=&quot;start&quot;] {
+	background-color: rgb(184 255 188);
+}
+QPushButton:pressed[style=&quot;stop&quot;] {
+	background-color: rgb(184 255 188);
+}
+
+QLabel {
+	background-color: rgb(255, 255, 255);
+}
+</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="CtlGen" name="ctlgen_6">
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QWidget {
+	background: rgb(217 217 217);
+	border-radius: 4%;
+}
+QPushButton {
+	border: none;
+	background-color: rgb(255, 255, 255);
+}
+QPushButton:pressed[style=&quot;start&quot;] {
+	background-color: rgb(184 255 188);
+}
+QPushButton:pressed[style=&quot;stop&quot;] {
+	background-color: rgb(184 255 188);
+}
+
+QLabel {
+	background-color: rgb(255, 255, 255);
+}
+</string>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="0">
+       <widget class="CtlGen" name="ctlgen_16">
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QWidget {
+	background: rgb(217 217 217);
+	border-radius: 4%;
+}
+QPushButton {
+	border: none;
+	background-color: rgb(255, 255, 255);
+}
+QPushButton:pressed[style=&quot;start&quot;] {
+	background-color: rgb(184 255 188);
+}
+QPushButton:pressed[style=&quot;stop&quot;] {
+	background-color: rgb(184 255 188);
+}
+
+QLabel {
+	background-color: rgb(255, 255, 255);
+}
+</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="CtlGen" name="m_1">
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QWidget {
+	background: rgb(217 217 217);
+	border-radius: 4%;
+}
+QPushButton {
+	border: none;
+	background-color: rgb(255, 255, 255);
+}
+QPushButton:pressed[style=&quot;start&quot;] {
+	background-color: rgb(184 255 188);
+}
+QPushButton:pressed[style=&quot;stop&quot;] {
+	background-color: rgb(184 255 188);
+}
+
+QLabel {
+	background-color: rgb(255, 255, 255);
+}
+</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="CtlGen" name="ctlgen_10">
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QWidget {
+	background: rgb(217 217 217);
+	border-radius: 4%;
+}
+QPushButton {
+	border: none;
+	background-color: rgb(255, 255, 255);
+}
+QPushButton:pressed[style=&quot;start&quot;] {
+	background-color: rgb(184 255 188);
+}
+QPushButton:pressed[style=&quot;stop&quot;] {
+	background-color: rgb(184 255 188);
+}
+
+QLabel {
+	background-color: rgb(255, 255, 255);
+}
+</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="CtlGen" name="ctlgen_5">
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QWidget {
+	background: rgb(217 217 217);
+	border-radius: 4%;
+}
+QPushButton {
+	border: none;
+	background-color: rgb(255, 255, 255);
+}
+QPushButton:pressed[style=&quot;start&quot;] {
+	background-color: rgb(184 255 188);
+}
+QPushButton:pressed[style=&quot;stop&quot;] {
+	background-color: rgb(184 255 188);
+}
+
+QLabel {
+	background-color: rgb(255, 255, 255);
+}
+</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="CtlGen" name="ctlgen_2">
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QWidget {
+	background: rgb(217 217 217);
+	border-radius: 4%;
+}
+QPushButton {
+	border: none;
+	background-color: rgb(255, 255, 255);
+}
+QPushButton:pressed[style=&quot;start&quot;] {
+	background-color: rgb(184 255 188);
+}
+QPushButton:pressed[style=&quot;stop&quot;] {
+	background-color: rgb(184 255 188);
+}
+
+QLabel {
+	background-color: rgb(255, 255, 255);
+}
+</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="CtlGen" name="ctlgen_9">
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QWidget {
+	background: rgb(217 217 217);
+	border-radius: 4%;
+}
+QPushButton {
+	border: none;
+	background-color: rgb(255, 255, 255);
+}
+QPushButton:pressed[style=&quot;start&quot;] {
+	background-color: rgb(184 255 188);
+}
+QPushButton:pressed[style=&quot;stop&quot;] {
+	background-color: rgb(184 255 188);
+}
+
+QLabel {
+	background-color: rgb(255, 255, 255);
+}
+</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="CtlGen" name="ctlgen_7">
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QWidget {
+	background: rgb(217 217 217);
+	border-radius: 4%;
+}
+QPushButton {
+	border: none;
+	background-color: rgb(255, 255, 255);
+}
+QPushButton:pressed[style=&quot;start&quot;] {
+	background-color: rgb(184 255 188);
+}
+QPushButton:pressed[style=&quot;stop&quot;] {
+	background-color: rgb(184 255 188);
+}
+
+QLabel {
+	background-color: rgb(255, 255, 255);
+}
+</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="CtlGen" name="ctlgen">
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QWidget {
+	background: rgb(217 217 217);
+	border-radius: 4%;
+}
+QPushButton {
+	border: none;
+	background-color: rgb(255, 255, 255);
+}
+QPushButton:pressed[style=&quot;start&quot;] {
+	background-color: rgb(184 255 188);
+}
+QPushButton:pressed[style=&quot;stop&quot;] {
+	background-color: rgb(184 255 188);
+}
+
+QLabel {
+	background-color: rgb(255, 255, 255);
+}
+</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="1">
+       <widget class="CtlGen" name="ctlgen_13">
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QWidget {
+	background: rgb(217 217 217);
+	border-radius: 4%;
+}
+QPushButton {
+	border: none;
+	background-color: rgb(255, 255, 255);
+}
+QPushButton:pressed[style=&quot;start&quot;] {
+	background-color: rgb(184 255 188);
+}
+QPushButton:pressed[style=&quot;stop&quot;] {
+	background-color: rgb(184 255 188);
+}
+
+QLabel {
+	background-color: rgb(255, 255, 255);
+}
+</string>
+        </property>
+       </widget>
+      </item>
+      <item row="10" column="0">
+       <widget class="CtlGen" name="ctlgen_18">
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QWidget {
+	background: rgb(217 217 217);
+	border-radius: 4%;
+}
+QPushButton {
+	border: none;
+	background-color: rgb(255, 255, 255);
+}
+QPushButton:pressed[style=&quot;start&quot;] {
+	background-color: rgb(184 255 188);
+}
+QPushButton:pressed[style=&quot;stop&quot;] {
+	background-color: rgb(184 255 188);
+}
+
+QLabel {
+	background-color: rgb(255, 255, 255);
+}
+</string>
+        </property>
+       </widget>
+      </item>
+      <item row="11" column="0">
+       <widget class="CtlGen" name="ctlgen_19">
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QWidget {
+	background: rgb(217 217 217);
+	border-radius: 4%;
+}
+QPushButton {
+	border: none;
+	background-color: rgb(255, 255, 255);
+}
+QPushButton:pressed[style=&quot;start&quot;] {
+	background-color: rgb(184 255 188);
+}
+QPushButton:pressed[style=&quot;stop&quot;] {
+	background-color: rgb(184 255 188);
+}
+
+QLabel {
+	background-color: rgb(255, 255, 255);
+}
+</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="1">
+       <widget class="CtlGen" name="ctlgen_20">
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QWidget {
+	background: rgb(217 217 217);
+	border-radius: 4%;
+}
+QPushButton {
+	border: none;
+	background-color: rgb(255, 255, 255);
+}
+QPushButton:pressed[style=&quot;start&quot;] {
+	background-color: rgb(184 255 188);
+}
+QPushButton:pressed[style=&quot;stop&quot;] {
+	background-color: rgb(184 255 188);
+}
+
+QLabel {
+	background-color: rgb(255, 255, 255);
+}
+</string>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="1">
+       <widget class="CtlGen" name="ctlgen_21">
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QWidget {
+	background: rgb(217 217 217);
+	border-radius: 4%;
+}
+QPushButton {
+	border: none;
+	background-color: rgb(255, 255, 255);
+}
+QPushButton:pressed[style=&quot;start&quot;] {
+	background-color: rgb(184 255 188);
+}
+QPushButton:pressed[style=&quot;stop&quot;] {
+	background-color: rgb(184 255 188);
+}
+
+QLabel {
+	background-color: rgb(255, 255, 255);
+}
+</string>
+        </property>
+       </widget>
+      </item>
+      <item row="9" column="1">
+       <widget class="CtlGen" name="ctlgen_22">
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QWidget {
+	background: rgb(217 217 217);
+	border-radius: 4%;
+}
+QPushButton {
+	border: none;
+	background-color: rgb(255, 255, 255);
+}
+QPushButton:pressed[style=&quot;start&quot;] {
+	background-color: rgb(184 255 188);
+}
+QPushButton:pressed[style=&quot;stop&quot;] {
+	background-color: rgb(184 255 188);
+}
+
+QLabel {
+	background-color: rgb(255, 255, 255);
+}
+</string>
+        </property>
+       </widget>
+      </item>
+      <item row="10" column="1">
+       <widget class="CtlGen" name="ctlgen_23">
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QWidget {
+	background: rgb(217 217 217);
+	border-radius: 4%;
+}
+QPushButton {
+	border: none;
+	background-color: rgb(255, 255, 255);
+}
+QPushButton:pressed[style=&quot;start&quot;] {
+	background-color: rgb(184 255 188);
+}
+QPushButton:pressed[style=&quot;stop&quot;] {
+	background-color: rgb(184 255 188);
+}
+
+QLabel {
+	background-color: rgb(255, 255, 255);
+}
+</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>Tab 2</string>
+     </attribute>
+    </widget>
    </widget>
   </widget>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>CtlGen</class>
+   <extends>QWidget</extends>
+   <header>customplugin</header>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
 </ui>

@@ -14,21 +14,21 @@ def main():
         import subprocess
         logic = subprocess.Popen(["python3", "src/krax.py"])
     
-    # dev = PYPLC(ns.device)
-    # app.devices['PLC'] = dev
+    dev = PYPLC(ns.device)
+    app.devices['PLC'] = dev
     
-    # Home = app.window('ui/Home.ui')
+    Main = app.window('ui/main.ui')
     
     # с использованием navbar
     # navbar.append(Home)       
     # navbar.instance.show( )
     # или 
     
-    #Home.show()               
+    Main.show()               
     
-    # dev.start(100)
-    # app.start( ctx = globals() )
-    # dev.stop( )
+    dev.start(100)
+    app.start( ctx = globals() )
+    dev.stop( )
 
     if ns.simulator:
         logic.terminate( )

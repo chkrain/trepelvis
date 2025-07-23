@@ -1,37 +1,31 @@
 import sys
-from pysca import app
-from pysca.device import PYPLC
-#import pygui.navbar as navbar
+from PyQt5.QtWidgets import QApplication
+from ui.ui_manager import MainWindow
 
 def main():
     import argparse
-    args = argparse.ArgumentParser(sys.argv)
-    args.add_argument('--device', action='store', type=str, default='192.168.2.10', help='IP address of the device')
-    args.add_argument('--simulator', action='store_true', default=False, help='Same as --device 127.0.0.1')
-    ns = args.parse_known_args()[0]
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--device', action='store', default='192.168.2.10')
+    parser.add_argument('--simulator', action='store_true', default=False)
+    ns = parser.parse_known_args()[0]
+    
     if ns.simulator:
         ns.device = '127.0.0.1'
-        # import subprocess
-        # logic = subprocess.Popen(["python3", "src/krax.py"])
+        import subprocess
+        # Запуск логики ПЛК в отдельном процессе
+        logic = subprocess.Popen(["python", "krax.py"])
     
-    # dev = PYPLC(ns.device)
-    # app.devices['PLC'] = dev
+    # Создание и запуск UI
+    app = QApplication(sys.argv)
+    window = MainWindow()
+    window.show()
     
-    # Home = app.window('ui/Home.ui')
-    # с использованием navbar
-    # navbar.append(Home)       
-    # navbar.instance.show( )
-    # или 
-    # Home.show()               
+    exit_code = app.exec_()
     
-    # dev.start(100)
-    app.start( ctx = globals() )
-    # dev.stop( )
-
     if ns.simulator:
-        # logic.terminate( )
-        pass
-
-if __name__=='__main__':
-    main( )
+        logic.terminate()
     
+    sys.exit(exit_code)
+
+if __name__ == '__main__':
+    main()
