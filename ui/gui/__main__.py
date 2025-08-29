@@ -1,6 +1,7 @@
 import sys
 from PyQt5.QtWidgets import QApplication
 from ui.ui_manager import MainWindow
+from ui.ui_manager import HomeWindow
 
 def main():
     import argparse
@@ -19,6 +20,9 @@ def main():
     app = QApplication(sys.argv)
     window = MainWindow()
     window.show()
+
+    window2 = HomeWindow()
+    window2.show()
     
     exit_code = app.exec_()
     

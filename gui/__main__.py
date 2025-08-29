@@ -1,12 +1,12 @@
 import sys
 from pysca import app
 from pysca.device import PYPLC
-#import pygui.navbar as navbar
+import pygui.multihead as navbar
 
 def main():
     import argparse
     args = argparse.ArgumentParser(sys.argv)
-    args.add_argument('--device', action='store', type=str, default='192.168.2.10', help='IP address of the device')
+    args.add_argument('--device', action='store', type=str, default='192.168.8.10', help='IP address of the device')
     args.add_argument('--simulator', action='store_true', default=False, help='Same as --device 127.0.0.1')
     ns = args.parse_known_args()[0]
     if ns.simulator:
@@ -18,13 +18,17 @@ def main():
     app.devices['PLC'] = dev
     
     Main = app.window('ui/main.ui')
+    Second = app.window('ui/Home.ui')
     
     # с использованием navbar
-    # navbar.append(Home)       
-    # navbar.instance.show( )
+    navbar.append(Main)
+    navbar.append(Second)       
+    navbar.instance.show( )
+    navbar.instance.setWindowTitle('APP MY')
     # или 
     
-    Main.show()               
+    # Main.show()               
+    # Second.show()
     
     dev.start(100)
     app.start( ctx = globals() )

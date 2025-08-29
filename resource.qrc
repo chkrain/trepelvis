@@ -1,0 +1,84 @@
+<RCC>
+  <qresource prefix="/">
+    <file alias="silos.png">images/silage-short.png</file>
+    <file alias="feeder2.mng">images/feeder-cw_mirror.mng</file>
+    <file>images/addition-dosator.mng</file>
+    <file>images/additions.png</file>
+    <file>images/anim.mng</file>
+    <file alias="attention.png">images/attention.png</file>
+    <file alias="auger.mng">images/auger.mng</file>
+    <file>images/auto-mixer.png</file>
+    <file>images/barometr.png</file>
+    <file>images/bell.png</file>
+    <file alias="bolt.png">images/bolt.png</file>
+    <file>images/broken-link.png</file>
+    <file>images/cement-dosator.mng</file>
+    <file>images/conveyor.mng</file>
+    <file>images/conveyor-2m.mng</file>
+    <file>images/conveyor-10m.mng</file>
+    <file>images/conveyor_mirror.mng</file>
+    <file>images/down.png</file>
+    <file alias="drum.mng">images/drum.mng</file>
+    <file>images/drum_mirror.mng</file>
+    <file>images/dryer.mng</file>
+    <file>images/elevator-above.png</file>
+    <file>images/elevator-below.png</file>
+    <file>images/elevator-below1.png</file>
+    <file>images/exhaust.png</file>
+    <file alias="feeder.mng">images/feeder-cw.mng</file>
+    <file alias="perecluch">images/fillers-container.mng</file>
+    <file>images/fillers-container-l.mng</file>
+    <file>images/fillers-container-r.mng</file>
+    <file>images/fillers-dosator.mng</file>
+    <file>images/fillers-rain-s.mng</file>
+    <file>images/gauge.png</file>
+    <file>images/green-led.png</file>
+    <file alias="hand.png">images/hand.png</file>
+    <file>images/heart.png</file>
+    <file>images/heavy.png</file>
+    <file>images/home.png</file>
+    <file alias="iconveyor.mng">images/iconveyor.mng</file>
+    <file alias="iconveyor_mirror.mng">images/iconveyor_mirror.mng</file>
+    <file>images/in_container.png</file>
+    <file>images/left.png</file>
+    <file>images/locked.png</file>
+    <file>images/mixer-axial.mng</file>
+    <file>images/mixer-gate-l.mng</file>
+    <file>images/mixer-gate-lp.mng</file>
+    <file>images/mixer-gate-rp.mng</file>
+    <file>images/mixer-planar.mng</file>
+    <file>images/noria.mng</file>
+    <file>images/noria-4h.mng</file>
+    <file>images/power.png</file>
+    <file alias="pump.mng">images/pump.mng</file>
+    <file>images/pysca-hmi.png</file>
+    <file>images/r-auger.mng</file>
+    <file>images/rauger.mng</file>
+    <file>images/red-led.png</file>
+    <file>images/right.png</file>
+    <file>images/siever.png</file>
+    <file alias="silage.png">images/silage.png</file>
+    <file>images/silage-short.png</file>
+    <file>images/small-fillers-dosator.mng</file>
+    <file>images/speed.png</file>
+    <file>images/stop.png</file>
+    <file>images/strength.png</file>
+    <file alias="tconveyor.mng">images/tconveyor.mng</file>
+    <file>images/temperature.png</file>
+    <file>images/timer.png</file>
+    <file>images/too-hard.png</file>
+    <file>images/valve.mng</file>
+    <file>images/vconveyor-5m.mng</file>
+    <file>images/water-dosator.mng</file>
+    <file>images/water-rain.mng</file>
+    <file>images/ПРОЦ АКТИВ.png</file>
+    <file>images/ПРОЦ СЕР111.png</file>
+    <file>images/РУКА АКТИВ.png</file>
+    <file>images/РУКА СЕР.png</file>
+    <file>images/старт зелен.png</file>
+    <file>images/старт красн.png</file>
+    <file>images/старт недост.png</file>
+    <file>images/стоп красн.png</file>
+    <file>images/стоп недост.png</file>
+  </qresource>
+</RCC>
